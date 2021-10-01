@@ -181,6 +181,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/SaveToGitHub/Button</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/ThemeTweaks/SwitchPalette/button</li>
+
 <li>$:/config/RelinkOnRename</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit</li>
@@ -232,6 +234,10 @@ Error message and password prompt
 <li>$:/languages/fr-FR</li>
 
 <li>$:/palette</li>
+
+<li>$:/palettes/Blanca</li>
+
+<li>$:/palettes/GruvboxDark</li>
 
 <li>$:/plugins/kookma/commander</li>
 
@@ -428,6 +434,12 @@ Error message and password prompt
 <li>$:/ThemeTweaks/svg/wikipedia</li>
 
 <li>$:/ThemeTweaks/SwitchPalette</li>
+
+<li>$:/ThemeTweaks/SwitchPalette/button</li>
+
+<li>$:/ThemeTweaks/SwitchPalette/image</li>
+
+<li>$:/ThemeTweaks/SwitchPalette/tags</li>
 
 <li>$:/ThemeTweaks/template/subtitle</li>
 
@@ -1750,7 +1762,7 @@ fill:none;
 <pre>Built from branch 'tiddlywiki-com' at commit ce8c03250cc2307fa12a992176629140c8391ab7 of https://github.com/Jermolene/TiddlyWiki5 at 2021-01-15 16:54:09 UTC
 </pre>
 </div>
-<div created="20210817082555752" modified="20211001214030806" title="$:/config/AutoSave">
+<div created="20210817082555752" modified="20211001224718159" title="$:/config/AutoSave">
 <pre>no</pre>
 </div>
 <div created="20181208231903157" modified="20181208231903752" title="$:/config/fa5/decorate-extdoclinks">
@@ -1790,6 +1802,9 @@ fill:none;
 <pre>hide</pre>
 </div>
 <div created="20211001152214311" modified="20211001152214311" title="$:/config/PageControlButtons/Visibility/$:/SaveToGitHub/Button">
+<pre>hide</pre>
+</div>
+<div created="20211001224233878" modified="20211001224233878" title="$:/config/PageControlButtons/Visibility/$:/ThemeTweaks/SwitchPalette/button">
 <pre>hide</pre>
 </div>
 <div created="20180820184820054" modified="20210914213106266" title="$:/config/RelinkOnRename">
@@ -11719,21 +11734,8 @@ fill:none;
 <div status="complete" title="$:/Import">
 <pre>Les tiddlers suivants ont été importés :
 
-# [[awesome piracy]]
-# [[gfxdomain.co]]
-# [[https://unblockit.ca/]]
-# [[Library Genesis]]
-# [[Liste de sites pour lire des mangas]]
-# [[Liste de sites pour regarder des séries/films]]
-# [[Pirater selon reddit]]
-# [[Sci-Hub]]
-# [[Script AfterEffect : TextExploder V2]]
-# [[Télécharger gratuitement des ebooks fr]]
-# [[thatoneprivacysite]]
-# [[weboas.is]]
-# [[youtube-dl]]
-# [[aarh]]
-# [[NSFW]]</pre>
+# [[$:/SaveToGitHub/style/SiteTitle]]
+# [[$:/SaveToGitHub/style/title]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -15651,8 +15653,250 @@ fill:none;
     }
 }</pre>
 </div>
-<div created="20210514010748693" modified="20210514010748693" title="$:/palette">
-<pre>$:/palettes/Twilight</pre>
+<div created="20210514010748693" modified="20211001224701228" title="$:/palette">
+<pre>$:/palettes/GruvboxDark</pre>
+</div>
+<div bag="default" created="20210907010728393" description="A clean white palette to let you focus" modified="20210923004503310" name="Blanca" revision="0" tags="$:/tags/Palette $:/ThemeTweaks/SwitchPalette/tags PalettePreview" title="$:/palettes/Blanca" type="application/x-tiddler-dictionary">
+<pre>alert-background: #ffe476
+alert-border: #b99e2f
+alert-highlight: #881122
+alert-muted-foreground: #b99e2f
+background: #ffffff
+blockquote-bar: &lt;&lt;colour muted-foreground&gt;&gt;
+button-background:
+button-foreground:
+button-border:
+code-background: #f7f7f9
+code-border: #e1e1e8
+code-foreground: #dd1144
+dirty-indicator: #ff0000
+download-background: #66cccc
+download-foreground: &lt;&lt;colour background&gt;&gt;
+dragger-background: &lt;&lt;colour foreground&gt;&gt;
+dragger-foreground: &lt;&lt;colour background&gt;&gt;
+dropdown-background: &lt;&lt;colour background&gt;&gt;
+dropdown-border: &lt;&lt;colour muted-foreground&gt;&gt;
+dropdown-tab-background-selected: #fff
+dropdown-tab-background: #ececec
+dropzone-background: rgba(0,200,0,0.7)
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+external-link-foreground-hover: inherit
+external-link-foreground-visited: #0000aa
+external-link-foreground: #0000ee
+foreground: #333333
+message-background: #ecf2ff
+message-border: #cfd6e6
+message-foreground: #547599
+modal-backdrop: &lt;&lt;colour foreground&gt;&gt;
+modal-background: &lt;&lt;colour background&gt;&gt;
+modal-border: #999999
+modal-footer-background: #f5f5f5
+modal-footer-border: #dddddd
+modal-header-border: #eeeeee
+muted-foreground: #999999
+notification-background: #ffffdd
+notification-border: #999999
+page-background: #ffffff
+pre-background: #f5f5f5
+pre-border: #cccccc
+primary: #7897f3
+select-tag-background:
+select-tag-foreground:
+sidebar-button-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-controls-foreground-hover: #000000
+sidebar-controls-foreground: #ccc
+sidebar-foreground-shadow: rgba(255,255,255, 0.8)
+sidebar-foreground: #acacac
+sidebar-muted-foreground-hover: #444444
+sidebar-muted-foreground: #c0c0c0
+sidebar-tab-background-selected: #ffffff
+sidebar-tab-background: &lt;&lt;colour tab-background&gt;&gt;
+sidebar-tab-border-selected: &lt;&lt;colour tab-border-selected&gt;&gt;
+sidebar-tab-border: &lt;&lt;colour tab-border&gt;&gt;
+sidebar-tab-divider: &lt;&lt;colour tab-divider&gt;&gt;
+sidebar-tab-foreground-selected: 
+sidebar-tab-foreground: &lt;&lt;colour tab-foreground&gt;&gt;
+sidebar-tiddler-link-foreground-hover: #444444
+sidebar-tiddler-link-foreground: #7897f3
+site-title-foreground: &lt;&lt;colour tiddler-title-foreground&gt;&gt;
+static-alert-foreground: #aaaaaa
+tab-background-selected: #ffffff
+tab-background: #eeeeee
+tab-border-selected: #cccccc
+tab-border: #cccccc
+tab-divider: #d8d8d8
+tab-foreground-selected: &lt;&lt;colour tab-foreground&gt;&gt;
+tab-foreground: #666666
+table-border: #dddddd
+table-footer-background: #a8a8a8
+table-header-background: #f0f0f0
+tag-background: #ffeedd
+tag-foreground: #000
+tiddler-background: &lt;&lt;colour background&gt;&gt;
+tiddler-border: #eee
+tiddler-controls-foreground-hover: #888888
+tiddler-controls-foreground-selected: #444444
+tiddler-controls-foreground: #cccccc
+tiddler-editor-background: #f8f8f8
+tiddler-editor-border-image: #ffffff
+tiddler-editor-border: #cccccc
+tiddler-editor-fields-even: #e0e8e0
+tiddler-editor-fields-odd: #f0f4f0
+tiddler-info-background: #f8f8f8
+tiddler-info-border: #dddddd
+tiddler-info-tab-background: #f8f8f8
+tiddler-link-background: &lt;&lt;colour background&gt;&gt;
+tiddler-link-foreground: &lt;&lt;colour primary&gt;&gt;
+tiddler-subtitle-foreground: #c0c0c0
+tiddler-title-foreground: #ff9900
+toolbar-new-button:
+toolbar-options-button:
+toolbar-save-button:
+toolbar-info-button:
+toolbar-edit-button:
+toolbar-close-button:
+toolbar-delete-button:
+toolbar-cancel-button:
+toolbar-done-button:
+untagged-background: #999999
+very-muted-foreground: #888888
+</pre>
+</div>
+<div bag="default" created="20210907005518953" description="Retro groove color scheme" license="https://github.com/morhetz/gruvbox" modified="20210907112251239" name="Gruvbox Dark" revision="0" tags="$:/tags/Palette PalettePreview $:/ThemeTweaks/SwitchPalette/tags" title="$:/palettes/GruvboxDark" type="application/x-tiddler-dictionary">
+<pre>alert-background: #cc241d
+alert-border: #cc241d
+alert-highlight: #d79921
+alert-muted-foreground: #504945
+background: #3c3836
+blockquote-bar: &lt;&lt;colour muted-foreground&gt;&gt;
+button-foreground: &lt;&lt;colour page-background&gt;&gt;
+code-background: #504945
+code-border: #504945
+code-foreground: #fb4934
+diff-delete-background: #fb4934
+diff-delete-foreground: &lt;&lt;colour foreground&gt;&gt;
+diff-equal-background: 
+diff-equal-foreground: &lt;&lt;colour foreground&gt;&gt;
+diff-insert-background: #b8bb26
+diff-insert-foreground: &lt;&lt;colour foreground&gt;&gt;
+diff-invisible-background: 
+diff-invisible-foreground: &lt;&lt;colour muted-foreground&gt;&gt;
+dirty-indicator: #fb4934
+download-background: #b8bb26
+download-foreground: &lt;&lt;colour background&gt;&gt;
+dragger-background: &lt;&lt;colour foreground&gt;&gt;
+dragger-foreground: &lt;&lt;colour background&gt;&gt;
+dropdown-background: #665c54
+dropdown-border: &lt;&lt;colour background&gt;&gt;
+dropdown-tab-background-selected: #ebdbb2
+dropdown-tab-background: #665c54
+dropzone-background: #98971a
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+external-link-foreground-hover: inherit
+external-link-foreground-visited: #d3869b
+external-link-foreground: #8ec07c
+foreground: #fbf1c7
+menubar-background: #504945
+menubar-foreground: &lt;&lt;colour foreground&gt;&gt;
+message-background: #83a598
+message-border: #83a598
+message-foreground: #3c3836
+modal-backdrop: &lt;&lt;colour foreground&gt;&gt;
+modal-background: &lt;&lt;colour background&gt;&gt;
+modal-border: #504945
+modal-footer-background: #3c3836
+modal-footer-border: #3c3836
+modal-header-border: #3c3836
+muted-foreground: #d5c4a1
+notification-background: &lt;&lt;colour primary&gt;&gt;
+notification-border: &lt;&lt;colour primary&gt;&gt;
+page-background: #282828
+pre-background: #504945
+pre-border: #504945
+primary: #d79921
+select-tag-background: #665c54
+select-tag-foreground: &lt;&lt;colour foreground&gt;&gt;
+selection-background: #458588
+selection-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-button-foreground: &lt;&lt;colour page-background&gt;&gt;
+sidebar-controls-foreground-hover: #7c6f64
+sidebar-controls-foreground: #504945
+sidebar-foreground-shadow: transparent
+sidebar-foreground: #fbf1c7
+sidebar-muted-foreground-hover: #7c6f64
+sidebar-muted-foreground: #504945
+sidebar-tab-background-selected: #bdae93
+sidebar-tab-background: #3c3836
+sidebar-tab-border-selected: &lt;&lt;colour tab-border-selected&gt;&gt;
+sidebar-tab-border: #bdae93
+sidebar-tab-divider: &lt;&lt;colour page-background&gt;&gt;
+sidebar-tab-foreground-selected: #282828
+sidebar-tab-foreground: &lt;&lt;colour tab-foreground&gt;&gt;
+sidebar-tiddler-link-foreground-hover: #458588
+sidebar-tiddler-link-foreground: #98971a
+site-title-foreground: &lt;&lt;colour tiddler-title-foreground&gt;&gt;
+static-alert-foreground: #B48EAD
+tab-background-selected: #ebdbb2
+tab-background: #665c54
+tab-border-selected: #665c54
+tab-border: #665c54
+tab-divider: #bdae93
+tab-foreground-selected: #282828
+tab-foreground: #ebdbb2
+table-border: #7c6f64
+table-footer-background: #665c54
+table-header-background: #504945
+tag-background: #d3869b
+tag-foreground: #282828
+tiddler-background: &lt;&lt;colour background&gt;&gt;
+tiddler-border: &lt;&lt;colour background&gt;&gt;
+tiddler-controls-foreground-hover: #7c6f64
+tiddler-controls-foreground-selected: &lt;&lt;colour primary&gt;&gt;
+tiddler-controls-foreground: #665c54
+tiddler-editor-background: #32302f
+tiddler-editor-border-image: #282828
+tiddler-editor-border: #282828
+tiddler-editor-fields-even: #504945
+tiddler-editor-fields-odd: #7c6f64
+tiddler-info-background: #32302f
+tiddler-info-border: #ebdbb2
+tiddler-info-tab-background: #ebdbb2
+tiddler-link-background: &lt;&lt;colour background&gt;&gt;
+tiddler-link-foreground: &lt;&lt;colour primary&gt;&gt;
+tiddler-subtitle-foreground: #7c6f64
+tiddler-title-foreground: #a89984
+toolbar-new-button: 
+toolbar-options-button: 
+toolbar-save-button: 
+toolbar-info-button: 
+toolbar-edit-button: 
+toolbar-close-button: 
+toolbar-delete-button: 
+toolbar-cancel-button: 
+toolbar-done-button: 
+untagged-background: #504945
+very-muted-foreground: #bdae93
+wikilist-background: &lt;&lt;colour page-background&gt;&gt;
+wikilist-button-background: #acacac
+wikilist-button-foreground: &lt;&lt;colour button-foreground&gt;&gt;
+wikilist-item: &lt;&lt;colour background&gt;&gt;
+wikilist-toolbar-background: &lt;&lt;colour background&gt;&gt;
+wikilist-toolbar-foreground: &lt;&lt;colour foreground&gt;&gt;
+wikilist-title: &lt;&lt;colour foreground&gt;&gt;
+wikilist-title-svg: &lt;&lt;colour wikilist-title&gt;&gt;
+wikilist-url: &lt;&lt;colour muted-foreground&gt;&gt;
+wikilist-button-open-hover: &lt;&lt;colour primary&gt;&gt;
+wikilist-button-open: &lt;&lt;colour dropzone-background&gt;&gt;
+wikilist-button-remove: &lt;&lt;colour dirty-indicator&gt;&gt;
+wikilist-button-remove-hover: &lt;&lt;colour alert-background&gt;&gt;
+wikilist-droplink-dragover: &lt;&lt;colour dropzone-background&gt;&gt;
+wikilist-button-reveal: &lt;&lt;colour sidebar-tiddler-link-foreground-hover&gt;&gt;
+wikilist-button-reveal-hover: &lt;&lt;colour message-background&gt;&gt;
+</pre>
 </div>
 <div core-version="&gt;=5.1.22" dependents="" description="batch processing tiddlers" list="readme history license authors" modified="20210810162644831" name="Tiddler Commander" plugin-type="plugin" source="https://github.com/kookma/TW-Commander" title="$:/plugins/kookma/commander" type="application/json" version="2.1.2">
 <pre>{
@@ -17216,8 +17460,8 @@ padding:.5em;
 <pre>\whitespace trim
 &lt;a href={{{[subfilter{$:/SaveToGitHub/GithubPageUrlFilter}]}}} class=&quot;site-title-link no-icon&quot;&gt;Vaforis&lt;/a&gt;</pre>
 </div>
-<div created="20210215144152727" modified="20211001212046158" title="$:/state/advancedsearch/currentTab">
-<pre>$:/core/ui/AdvancedSearch/System</pre>
+<div created="20210215144152727" modified="20211001224538359" title="$:/state/advancedsearch/currentTab">
+<pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
 <div created="20210817082929859" modified="20211001211821465" title="$:/state/commander/log-tiddler">
 <pre>$:/temp/commander/logs/tid-1</pre>
@@ -17240,20 +17484,20 @@ padding:.5em;
 <div created="20210302121616244" modified="20211001213134541" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div created="20210211000438905" modified="20211001212923590" title="$:/state/sidebar">
+<div created="20210211000438905" modified="20211001224712593" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210817082926446" modified="20211001211817093" title="$:/state/tab--103319216">
 <pre>$:/plugins/kookma/commander/field/uicomp/remove-fields</pre>
 </div>
-<div created="20210215144152728" modified="20211001212046158" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/System</pre>
+<div created="20210215144152728" modified="20211001224538359" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
 <div created="20210514010743830" modified="20211001152204489" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
-<div created="20210117184637272" modified="20211001152629998" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20210117184637272" modified="20211001224228758" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20210117184639207" modified="20211001115042775" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -17267,11 +17511,11 @@ padding:.5em;
 <div created="20211001151145782" modified="20211001210429787" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/SaveToGitHub/Settings</pre>
 </div>
-<div created="20210206015653276" modified="20211001214025857" title="$:/state/tab/sidebar--595412856">
+<div created="20210206015653276" modified="20211001224458444" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div created="20211001152206029" modified="20211001152523301" title="$:/state/tabs/controlpanel/toolbars-1345989671">
-<pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
+<div created="20211001152206029" modified="20211001224230513" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
@@ -17501,7 +17745,7 @@ button.tc-unfold-banner {
 }
 */</pre>
 </div>
-<div bag="default" caption="Fonts" created="20210907113823607" creator="Telumire" modified="20211001154327002" modifier="Telumire" revision="0" tags="$:/tags/Stylesheet $:/ThemeTweaks $:/ThemeTweaks/style/fonts" title="$:/ThemeTweaks/style/fonts" type="text/css">
+<div bag="default" caption="Fonts" created="20210907113823607" creator="Telumire" modified="20210927230648153" modifier="Telumire" revision="0" tags="$:/tags/Stylesheet $:/ThemeTweaks $:/ThemeTweaks/style/fonts $:/tags/SideBar" title="$:/ThemeTweaks/style/fonts" type="text/css">
 <pre>/* https://fonts.googleapis.com/css2?family=Zilla+Slab */
 /* latin-ext */
 @font-face {
@@ -17729,7 +17973,7 @@ display:none;
 <div created="20210928131422906" modified="20210928140625847" tags="$:/ThemeTweaks $:/ThemeTweaks/svg $:/tags/Image $:/bookmarks" title="$:/ThemeTweaks/svg/star">
 <pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-star tc-image-button&quot; viewBox=&quot;0 0 128 128&quot;&gt;&lt;path d=&quot;M6 48h42L61 8c1-3 5-3 6 0l13 40h42c3 0 4 4 2 6L90 78l13 40c1 3-3 6-5 4L64 97l-34 25c-2 2-6-1-5-4l13-40L4 54c-2-2-1-6 2-6z&quot;/&gt;&lt;/svg&gt;</pre>
 </div>
-<div bag="default" created="20210613102831878" description="https://tiddlywiki.com https://github.com" modified="20211001152028967" revision="0" tagging-tiddler="" tags="$:/ThemeTweaks $:/tags/Stylesheet $:/ThemeTweaks/svg" title="$:/ThemeTweaks/svg/style/external_link">
+<div bag="default" created="20210613102831878" description="https://tiddlywiki.com https://github.com" modified="20210929133403543" revision="0" tagging-tiddler="" tags="$:/ThemeTweaks $:/tags/Stylesheet $:/ThemeTweaks/svg" title="$:/ThemeTweaks/svg/style/external_link">
 <pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 &lt;pre&gt;
 
@@ -17752,7 +17996,6 @@ a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible):after, .i
 &lt;$vars fill=&quot;external-link-foreground&quot;&gt;
 
 a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible):after {&lt;$vars svg=&quot;$:/core/images/open-window&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
-a[href^=&quot;https://&quot;]:not(a.no-icon):after {&lt;$vars svg=&quot;$:/core/images/locked-padlock&quot;&gt;{{||$:/ThemeTweaks/svg/url}} &lt;/$vars&gt;}
 a[href*=&quot;tiddlywiki.&quot;]:not(a.no-icon):after {&lt;$vars svg=&quot;$:/core/icon&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;github.&quot;]:not(a.no-icon):after {&lt;$vars svg=&quot;$:/core/images/github&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;wikipedia.&quot;]:not(a.no-icon):after {&lt;$vars svg=&quot;$:/ThemeTweaks/svg/wikipedia&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
@@ -17763,7 +18006,6 @@ a[href^=&quot;mailto&quot;]:not(a.no-icon):after {&lt;$vars svg=&quot;$:/core/im
 &lt;$vars fill=&quot;external-link-foreground-visited&quot;&gt;
 
 a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible):visited:after {&lt;$vars svg=&quot;$:/core/images/open-window&quot;&gt; {{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt; }
-a[href^=&quot;https://&quot;]:not(a.no-icon):visited:after  {&lt;$vars svg=&quot;$:/core/images/locked-padlock&quot;&gt;{{||$:/ThemeTweaks/svg/url}} &lt;/$vars&gt;}
 a[href*=&quot;tiddlywiki.&quot;]:not(a.no-icon):visited:after {&lt;$vars svg=&quot;$:/core/icon&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;github.&quot;]:not(a.no-icon):visited:after {&lt;$vars svg=&quot;$:/core/images/github&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;wikipedia.&quot;]:not(a.no-icon):visited:after {&lt;$vars svg=&quot;$:/ThemeTweaks/svg/wikipedia&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
@@ -17774,7 +18016,6 @@ a[href^=&quot;mailto&quot;]:not(a.no-icon):visited:after {&lt;$vars svg=&quot;$:
 &lt;$vars fill=&quot;external-link-foreground-hover&quot;&gt;
 
 a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible):hover:after{&lt;$vars svg=&quot;$:/core/images/open-window&quot;&gt; {{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
-a[href^=&quot;https://&quot;]:not(a.no-icon):hover:after  {&lt;$vars svg=&quot;$:/core/images/locked-padlock&quot;&gt;{{||$:/ThemeTweaks/svg/url}} &lt;/$vars&gt;}
 a[href*=&quot;tiddlywiki.&quot;]:not(a.no-icon):hover:after {&lt;$vars svg=&quot;$:/core/icon&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;github.&quot;]:not(a.no-icon):hover:after {&lt;$vars svg=&quot;$:/core/images/github&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;wikipedia.&quot;]:not(a.no-icon):hover:after {&lt;$vars svg=&quot;$:/ThemeTweaks/svg/wikipedia&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
@@ -17940,6 +18181,45 @@ fill={{{[&lt;fill&gt;]:reduce[{$:/palette}getindex&lt;currentTiddler&gt;match[in
 <pre>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;22pt&quot; height=&quot;22pt&quot; fill-rule=&quot;evenodd&quot; stroke-miterlimit=&quot;10&quot; shape-rendering=&quot;geometricPrecision&quot; viewBox=&quot;0 0 128 128&quot;&gt;&lt;path d=&quot;M120.8 29.2c0 .4 0 .8-.3 1.1-.3.4-.6.5-.9.5-2.5.3-4.5 1-6 2.4-1.7 1.4-3.3 4-5 7.8L82.8 99.3c-.2.5-.6.8-1.4.8-.6 0-1.1-.3-1.4-.8L65.5 68.9 48.9 99.2c-.4.5-.9.8-1.5.8-.7 0-1.2-.3-1.4-.8L20.6 41a20.1 20.1 0 0 0-5-7.5 13.7 13.7 0 0 0-7.3-2.7c-.3 0-.6-.1-.8-.4-.2-.3-.3-.6-.3-1 0-1 .2-1.4.8-1.4l7 .3a71 71 0 0 0 13.8 0l7.8-.3c.5 0 .8.5.8 1.4 0 1-.2 1.4-.5 1.4-2.3.2-4 .8-5.3 1.7-1.3 1-2 2.3-2 3.9 0 .8.3 1.8.8 3l21 47.3 11.9-22.4L52.2 41c-2-4-3.6-6.8-5-8a9.9 9.9 0 0 0-5.7-2.2c-.3 0-.5-.1-.7-.4-.2-.3-.3-.6-.3-1 0-1 .2-1.4.7-1.4 2.2 0 4.3.1 6.2.3a50.9 50.9 0 0 0 12.2 0l6.9-.3c.5 0 .8.5.8 1.4 0 1-.1 1.4-.5 1.4-4.5.3-6.8 1.6-6.8 3.9 0 1 .5 2.6 1.6 4.7l7.3 14.9 7.3-13.6c1-2 1.5-3.6 1.5-5 0-3-2.2-4.7-6.7-4.9-.5 0-.7-.4-.7-1.4 0-.3.2-.6.4-1 .2-.3.4-.4.6-.4l6 .3a62.3 62.3 0 0 0 10.1 0l6.4-.3c.4 0 .6.4.6 1.2 0 1-.3 1.6-1 1.6-2.7.3-4.8 1-6.4 2.2a27.8 27.8 0 0 0-6 8l-9.7 18 13.1 26.8 19.4-45.1c.7-1.7 1-3.2 1-4.6 0-3.3-2.2-5-6.7-5.3-.4 0-.6-.4-.6-1.4 0-1 .3-1.4.9-1.4l5.8.3a54 54 0 0 0 10.5 0l5.4-.3c.5 0 .8.4.8 1.2z&quot;/&gt;&lt;/svg&gt;</pre>
 </div>
 <div bag="default" created="20210811020158840" modified="20210923184724058" revision="0" tagging="after" tags="$:/ThemeTweaks/SwitchPalette $:/ThemeTweaks" title="$:/ThemeTweaks/SwitchPalette">
+<pre></pre>
+</div>
+<div bag="default" caption="{{$:/ThemeTweaks/SwitchPalette/image}} Switch palette" created="20201210171047824" description="Choose a colour palette" modified="20210927233444384" revision="0" source="[[modified from https://nicolas.petton.fr/tw/notebook.html]]" tags="$:/tags/PageControls $:/ThemeTweaks/SwitchPalette $:/tags/TopRightBar" task="doing" title="$:/ThemeTweaks/SwitchPalette/button" type="text/vnd.tiddlywiki">
+<pre>\whitespace trim
+&lt;$vars 
+palettes=&quot;[all[tiddlers+shadows]tag[$:/ThemeTweaks/SwitchPalette/tags]]&quot; 
+popupTiddler=&lt;&lt;qualify &quot;$:/state/palette-dropdown&quot;&gt;&gt;
+&gt;
+    &lt;$button popup=&lt;&lt;popupTiddler&gt;&gt;
+        tooltip=&quot;Switch colours&quot;
+        aria-label=&quot;Switch colours&quot;
+        class=&lt;&lt;tv-config-toolbar-class&gt;&gt;
+    &gt;
+    &lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;{{$:/ThemeTweaks/SwitchPalette/image}}&lt;/$list&gt;
+    &lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;&lt;span class=&quot;tc-btn-text&quot;&gt;Switch colours&lt;/span&gt;&lt;/$list&gt;
+    &lt;$reveal default={{{ [subfilter:&lt;palettes&gt;count[]] }}} type=&quot;gt&quot; text=&quot;2&quot;&gt;
+            &lt;$reveal state=&lt;&lt;popupTiddler&gt;&gt; type=&quot;popup&quot; position=&quot;belowleft&quot; class=&quot;tc-drop-down&quot;&gt;
+                &lt;$list filter=&lt;&lt;palettes&gt;&gt;&gt;
+                    &lt;$button class=&quot;tc-btn-invisible&quot;&gt;
+                        &lt;$list filter=&quot;[&lt;currentTiddler&gt;match{$:/palette}]&quot;&gt;&lt;li&gt;{{!!name}}&lt;/li&gt;&lt;/$list&gt;
+                        &lt;$list filter=&quot;[&lt;currentTiddler&gt;!match{$:/palette}]&quot;&gt;{{!!name}}&lt;/$list&gt;
+                        &lt;$action-setfield $tiddler=&quot;$:/palette&quot; text={{!!title}} /&gt;
+                    &lt;/$button&gt;
+                &lt;/$list&gt;
+            &lt;/$reveal&gt;
+        &lt;/$reveal&gt;
+        &lt;$reveal default={{{ [subfilter:&lt;palettes&gt;count[]] }}} type=&quot;lteq&quot; text=&quot;2&quot;&gt;
+            &lt;$action-setfield $tiddler=&quot;$:/palette&quot; text={{{ [subfilter:&lt;palettes&gt;!match{$:/palette}] }}} /&gt;
+        &lt;/$reveal&gt;
+    &lt;/$button&gt;
+&lt;/$vars&gt;</pre>
+</div>
+<div bag="default" created="20201210170859810" modified="20210907112503276" revision="0" tags="$:/ThemeTweaks/SwitchPalette" title="$:/ThemeTweaks/SwitchPalette/image" type="text/vnd.tiddlywiki">
+<pre>&lt;svg width=&quot;20px&quot; height=&quot;20px&quot; viewBox=&quot;0 0 16 16&quot; class=&quot;bi bi-circle-half&quot; fill=&quot;currentColor&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+  &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M8 15V1a7 7 0 1 1 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z&quot;/&gt;
+&lt;/svg
+</pre>
+</div>
+<div bag="default" created="20210811020117077" modified="20210907112251236" revision="0" tagging="after" tags="$:/ThemeTweaks/SwitchPalette" title="$:/ThemeTweaks/SwitchPalette/tags">
 <pre></pre>
 </div>
 <div bag="default" created="20210802170615024" list-before="$:/core/ui/ViewTemplate/subtitle" modified="20210922203853598" revision="0" tags="$:/tags/ViewTemplate $:/Reading-time $:/ThemeTweaks" title="$:/ThemeTweaks/template/subtitle">
@@ -18121,7 +18401,7 @@ alternative : [[Enhancer for YouTube™|https://addons.mozilla.org/fr/firefox/ad
 <div created="20180923102116348" list="" modified="20211001211951504" tags="tags" title="académique">
 <pre></pre>
 </div>
-<div created="20180803213123117" modified="20211001160804057" tags="full-width [[$:/tags/AboveStory ]] hide-tags hide-subtitle" title="Accueil">
+<div created="20180803213123117" modified="20211001224533232" tags="full-width [[$:/tags/AboveStory ]] hide-tags hide-subtitle" title="Accueil">
 <pre>^^{{Nombre de tiddlers dans ce tiddlywiki}}^^
 
 &lt;&lt;&lt;
