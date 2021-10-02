@@ -185,6 +185,8 @@ Error message and password prompt
 
 <li>$:/config/RelinkOnRename</li>
 
+<li>$:/config/Tiddlers/TitleLinks</li>
+
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold</li>
@@ -369,6 +371,8 @@ Error message and password prompt
 
 <li>$:/StoryList</li>
 
+<li>$:/tags/BottomLeftBar/to top</li>
+
 <li>$:/tags/MoreSideBar</li>
 
 <li>$:/tags/PageControls</li>
@@ -386,6 +390,10 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/vanilla/options/stickytitles</li>
 
 <li>$:/ThemeTweaks</li>
+
+<li>$:/ThemeTweaks/BottomLeftBar</li>
+
+<li>$:/ThemeTweaks/BottomLeftBar/style</li>
 
 <li>$:/ThemeTweaks/button/right_story</li>
 
@@ -416,6 +424,10 @@ Error message and password prompt
 <li>$:/ThemeTweaks/style/texte-align</li>
 
 <li>$:/ThemeTweaks/style/tiddler_controls</li>
+
+<li>$:/ThemeTweaks/style/topbar-left</li>
+
+<li>$:/ThemeTweaks/style/topbar-right</li>
 
 <li>$:/ThemeTweaks/style/warning</li>
 
@@ -1762,7 +1774,7 @@ fill:none;
 <pre>Built from branch 'tiddlywiki-com' at commit ce8c03250cc2307fa12a992176629140c8391ab7 of https://github.com/Jermolene/TiddlyWiki5 at 2021-01-15 16:54:09 UTC
 </pre>
 </div>
-<div created="20210817082555752" modified="20211001224718159" title="$:/config/AutoSave">
+<div created="20210817082555752" modified="20211002004044783" title="$:/config/AutoSave">
 <pre>no</pre>
 </div>
 <div created="20181208231903157" modified="20181208231903752" title="$:/config/fa5/decorate-extdoclinks">
@@ -1808,6 +1820,9 @@ fill:none;
 <pre>hide</pre>
 </div>
 <div created="20180820184820054" modified="20210914213106266" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
+</div>
+<div created="20211001225139086" modified="20211001225139086" title="$:/config/Tiddlers/TitleLinks">
 <pre>yes</pre>
 </div>
 <div created="20211001152317547" modified="20211001152317547" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit">
@@ -11734,8 +11749,7 @@ fill:none;
 <div status="complete" title="$:/Import">
 <pre>Les tiddlers suivants ont été importés :
 
-# [[$:/SaveToGitHub/style/SiteTitle]]
-# [[$:/SaveToGitHub/style/title]]</pre>
+# [[$:/ThemeTweaks/style/topbar-left]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -15653,7 +15667,7 @@ fill:none;
     }
 }</pre>
 </div>
-<div created="20210514010748693" modified="20211001224701228" title="$:/palette">
+<div created="20210514010748693" modified="20211002004022496" title="$:/palette">
 <pre>$:/palettes/GruvboxDark</pre>
 </div>
 <div bag="default" created="20210907010728393" description="A clean white palette to let you focus" modified="20210923004503310" name="Blanca" revision="0" tags="$:/tags/Palette $:/ThemeTweaks/SwitchPalette/tags PalettePreview" title="$:/palettes/Blanca" type="application/x-tiddler-dictionary">
@@ -17460,8 +17474,8 @@ padding:.5em;
 <pre>\whitespace trim
 &lt;a href={{{[subfilter{$:/SaveToGitHub/GithubPageUrlFilter}]}}} class=&quot;site-title-link no-icon&quot;&gt;Vaforis&lt;/a&gt;</pre>
 </div>
-<div created="20210215144152727" modified="20211001224538359" title="$:/state/advancedsearch/currentTab">
-<pre>$:/core/ui/AdvancedSearch/Standard</pre>
+<div created="20210215144152727" modified="20211002003912464" title="$:/state/advancedsearch/currentTab">
+<pre>$:/core/ui/AdvancedSearch/System</pre>
 </div>
 <div created="20210817082929859" modified="20211001211821465" title="$:/state/commander/log-tiddler">
 <pre>$:/temp/commander/logs/tid-1</pre>
@@ -17484,20 +17498,20 @@ padding:.5em;
 <div created="20210302121616244" modified="20211001213134541" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div created="20210211000438905" modified="20211001224712593" title="$:/state/sidebar">
+<div created="20210211000438905" modified="20211002004039303" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210817082926446" modified="20211001211817093" title="$:/state/tab--103319216">
 <pre>$:/plugins/kookma/commander/field/uicomp/remove-fields</pre>
 </div>
-<div created="20210215144152728" modified="20211001224538359" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/Standard</pre>
+<div created="20210215144152728" modified="20211002003912464" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/System</pre>
 </div>
 <div created="20210514010743830" modified="20211001152204489" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
-<div created="20210117184637272" modified="20211001224228758" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20210117184637272" modified="20211001225130321" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20210117184639207" modified="20211001115042775" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -17522,6 +17536,19 @@ padding:.5em;
 </div>
 <div list="Accueil" title="$:/StoryList">
 <pre></pre>
+</div>
+<div created="20210825225717443" description="todo: floating arrow as seen here https://codepen.io/ig_design/pen/yrwgwO" modified="20211002003503861" tags="$:/ThemeTweaks $:/tags/BottomLeftBar bookmark" task="doing" title="$:/tags/BottomLeftBar/to top">
+<pre>&lt;style&gt;
+html {
+  scroll-behavior: smooth;
+}
+
+a.not-a-link{
+text-decoration:none;
+color:&lt;&lt;color foreground&gt;&gt;;
+}
+&lt;/style&gt;
+&lt;a class=&quot;not-a-link&quot; href=&quot;#&quot; title=&quot;Back to top&quot;&gt;↑&lt;/a&gt;</pre>
 </div>
 <div created="20211001151155837" list="$:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Orphans $:/core/ui/MoreSideBar/Types $:/core/ui/MoreSideBar/System $:/core/ui/MoreSideBar/Shadows $:/core/ui/MoreSideBar/Explorer $:/core/ui/MoreSideBar/Plugins $:/SaveToGitHub/Settings" modified="20211001151206667" title="$:/tags/MoreSideBar">
 <pre></pre>
@@ -17652,6 +17679,20 @@ padding:.5em;
 </div>
 <div bag="default" created="20210907011026232" description="Various theme tweaks to improve the look and feel of TW (according to me)" list="$:/ThemeTweaks $:/ThemeTweaks/button/right_story $:/ThemeTweaks/caption/right_story $:/ThemeTweaks/font/style/Roboto_Slab $:/ThemeTweaks/icon/external_link $:/ThemeTweaks/icon/warning $:/ThemeTweaks/svg/style/external_link $:/ThemeTweaks/style/fold_banner $:/ThemeTweaks/style/fonts $:/ThemeTweaks/style/hide-until-hover $:/ThemeTweaks/style/right_story $:/ThemeTweaks/style/sidebar $:/ThemeTweaks/style/texte-align $:/ThemeTweaks/style/tiddler_controls $:/ThemeTweaks/style/warning" modified="20210923184132624" revision="0" tagging="after" tags="$:/ThemeTweaks $:/TiddlyTweaks" title="$:/ThemeTweaks">
 <pre></pre>
+</div>
+<div created="20211002000611860" modified="20211002002356370" tags="$:/tags/TopLeftBar $:/ThemeTweaks" title="$:/ThemeTweaks/BottomLeftBar">
+<pre>&lt;span class=&quot;tc-bottombar-left&quot;&gt;&lt;$list filter=&quot;[tag[$:/tags/BottomLeftBar]]&quot;&gt;&lt;$transclude/&gt;&lt;/$list&gt;&lt;/span&gt;</pre>
+</div>
+<div created="20211002000712270" modified="20211002003648691" tags="$:/tags/Stylesheet $:/ThemeTweaks" title="$:/ThemeTweaks/BottomLeftBar/style" type="text/css">
+<pre>.tc-topbar.tc-topbar-left .tc-bottombar-left{
+	position:fixed;
+	left:0;
+	bottom:0;
+}
+
+.tc-topbar.tc-topbar-left .tc-bottombar-left&gt;*{
+padding: 8px;
+}</pre>
 </div>
 <div bag="default" caption="Move tiddler to the right" created="20210728115549996" description="Move tiddler to right column" modified="20210928142527474" revision="0" tags="$:/tags/Macro $:/tags/ViewToolbar $:/tags/EditToolbar $:/ThemeTweaks" title="$:/ThemeTweaks/button/right_story">
 <pre>\whitespace trim
@@ -17948,6 +17989,16 @@ display:none;
 
 }</pre>
 </div>
+<div created="20211001224927493" modified="20211002000629516" tags="$:/tags/Stylesheet $:/ThemeTweaks" title="$:/ThemeTweaks/style/topbar-left" type="text/css">
+<pre>.tc-topbar.tc-topbar-left{
+	left:0;top:0;
+}</pre>
+</div>
+<div created="20211001224927493" modified="20211001225051361" tags="$:/tags/Stylesheet $:/ThemeTweaks" title="$:/ThemeTweaks/style/topbar-right" type="text/css">
+<pre>.tc-topbar.tc-topbar-right{
+right:0;
+}</pre>
+</div>
 <div bag="default" created="20210727145647733" modified="20210922145348752" revision="0" tags="$:/ThemeTweaks $:/tags/Stylesheet" title="$:/ThemeTweaks/style/warning">
 <pre>&lt;pre&gt;
 .tc-quote.warning {
@@ -17973,11 +18024,11 @@ display:none;
 <div created="20210928131422906" modified="20210928140625847" tags="$:/ThemeTweaks $:/ThemeTweaks/svg $:/tags/Image $:/bookmarks" title="$:/ThemeTweaks/svg/star">
 <pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-image-star tc-image-button&quot; viewBox=&quot;0 0 128 128&quot;&gt;&lt;path d=&quot;M6 48h42L61 8c1-3 5-3 6 0l13 40h42c3 0 4 4 2 6L90 78l13 40c1 3-3 6-5 4L64 97l-34 25c-2 2-6-1-5-4l13-40L4 54c-2-2-1-6 2-6z&quot;/&gt;&lt;/svg&gt;</pre>
 </div>
-<div bag="default" created="20210613102831878" description="https://tiddlywiki.com https://github.com" modified="20210929133403543" revision="0" tagging-tiddler="" tags="$:/ThemeTweaks $:/tags/Stylesheet $:/ThemeTweaks/svg" title="$:/ThemeTweaks/svg/style/external_link">
+<div bag="default" created="20210613102831878" description="https://tiddlywiki.com https://github.com" modified="20211002003141544" revision="0" tagging-tiddler="" tags="$:/ThemeTweaks $:/tags/Stylesheet $:/ThemeTweaks/svg" title="$:/ThemeTweaks/svg/style/external_link">
 <pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 &lt;pre&gt;
 
-a[href]:not(.no-icon, .tc-tiddlylink, .tc-btn-invisible){
+a[href]:not(.no-icon, .tc-tiddlylink, .tc-btn-invisible,.not-a-link){
     color:&lt;&lt;color external-link-foreground&gt;&gt;;
 }
 
@@ -17995,7 +18046,7 @@ a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible):after, .i
 
 &lt;$vars fill=&quot;external-link-foreground&quot;&gt;
 
-a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible):after {&lt;$vars svg=&quot;$:/core/images/open-window&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
+a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible,.not-a-link):after {&lt;$vars svg=&quot;$:/core/images/open-window&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;tiddlywiki.&quot;]:not(a.no-icon):after {&lt;$vars svg=&quot;$:/core/icon&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;github.&quot;]:not(a.no-icon):after {&lt;$vars svg=&quot;$:/core/images/github&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;wikipedia.&quot;]:not(a.no-icon):after {&lt;$vars svg=&quot;$:/ThemeTweaks/svg/wikipedia&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
@@ -18005,7 +18056,7 @@ a[href^=&quot;mailto&quot;]:not(a.no-icon):after {&lt;$vars svg=&quot;$:/core/im
 
 &lt;$vars fill=&quot;external-link-foreground-visited&quot;&gt;
 
-a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible):visited:after {&lt;$vars svg=&quot;$:/core/images/open-window&quot;&gt; {{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt; }
+a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible,.not-a-link):visited:after {&lt;$vars svg=&quot;$:/core/images/open-window&quot;&gt; {{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt; }
 a[href*=&quot;tiddlywiki.&quot;]:not(a.no-icon):visited:after {&lt;$vars svg=&quot;$:/core/icon&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;github.&quot;]:not(a.no-icon):visited:after {&lt;$vars svg=&quot;$:/core/images/github&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;wikipedia.&quot;]:not(a.no-icon):visited:after {&lt;$vars svg=&quot;$:/ThemeTweaks/svg/wikipedia&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
@@ -18015,7 +18066,7 @@ a[href^=&quot;mailto&quot;]:not(a.no-icon):visited:after {&lt;$vars svg=&quot;$:
 
 &lt;$vars fill=&quot;external-link-foreground-hover&quot;&gt;
 
-a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible):hover:after{&lt;$vars svg=&quot;$:/core/images/open-window&quot;&gt; {{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
+a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible,.not-a-link):hover:after{&lt;$vars svg=&quot;$:/core/images/open-window&quot;&gt; {{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;tiddlywiki.&quot;]:not(a.no-icon):hover:after {&lt;$vars svg=&quot;$:/core/icon&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;github.&quot;]:not(a.no-icon):hover:after {&lt;$vars svg=&quot;$:/core/images/github&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
 a[href*=&quot;wikipedia.&quot;]:not(a.no-icon):hover:after {&lt;$vars svg=&quot;$:/ThemeTweaks/svg/wikipedia&quot;&gt;{{||$:/ThemeTweaks/svg/url}}&lt;/$vars&gt;}
@@ -18023,7 +18074,7 @@ a[href^=&quot;mailto&quot;]:not(a.no-icon):hover:after {&lt;$vars svg=&quot;$:/c
 
 &lt;/$vars&gt;
 
-a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible):hover, a.icon-svg:hover{
+a:not([href^=&quot;#&quot;],.tc-tiddlylink,.no-icon,.tc-btn-invisible,.not-a-link):hover, a.icon-svg:hover{
 color:&lt;&lt;color external-link-foreground-hover&gt;&gt;;
 }</pre>
 </div>
@@ -18183,7 +18234,7 @@ fill={{{[&lt;fill&gt;]:reduce[{$:/palette}getindex&lt;currentTiddler&gt;match[in
 <div bag="default" created="20210811020158840" modified="20210923184724058" revision="0" tagging="after" tags="$:/ThemeTweaks/SwitchPalette $:/ThemeTweaks" title="$:/ThemeTweaks/SwitchPalette">
 <pre></pre>
 </div>
-<div bag="default" caption="{{$:/ThemeTweaks/SwitchPalette/image}} Switch palette" created="20201210171047824" description="Choose a colour palette" modified="20210927233444384" revision="0" source="[[modified from https://nicolas.petton.fr/tw/notebook.html]]" tags="$:/tags/PageControls $:/ThemeTweaks/SwitchPalette $:/tags/TopRightBar" task="doing" title="$:/ThemeTweaks/SwitchPalette/button" type="text/vnd.tiddlywiki">
+<div bag="default" caption="{{$:/ThemeTweaks/SwitchPalette/image}} Switch palette" created="20201210171047824" description="Choose a colour palette" modified="20211002003930171" revision="0" source="[[modified from https://nicolas.petton.fr/tw/notebook.html]]" tags="$:/tags/PageControls $:/ThemeTweaks/SwitchPalette $:/tags/TopLeftBar" task="doing" title="$:/ThemeTweaks/SwitchPalette/button" type="text/vnd.tiddlywiki">
 <pre>\whitespace trim
 &lt;$vars 
 palettes=&quot;[all[tiddlers+shadows]tag[$:/ThemeTweaks/SwitchPalette/tags]]&quot; 
